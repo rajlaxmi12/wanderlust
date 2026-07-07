@@ -1,0 +1,357 @@
+<% layout("/layouts/home") %>
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <h1>Find your next unforgettable stay.</h1>
+
+        <p>
+            Discover unique homes, cabins, villas and unforgettable experiences
+            across the world.
+        </p>
+
+        <form action="/listings" method="GET" class="hero-search">
+
+            <input
+                type="text"
+                name="search"
+                placeholder="Search destinations..."
+            >
+
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="container my-5">
+
+    <h2 class="section-title">
+        Explore by Category
+    </h2>
+
+    <div class="categories">
+
+        <div class="category-card">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <span>Beach</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-mountain"></i>
+            <span>Mountain</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-campground"></i>
+            <span>Camping</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-water"></i>
+            <span>Lake</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-city"></i>
+            <span>City</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-tree"></i>
+            <span>Forest</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-igloo"></i>
+            <span>Arctic</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-landmark"></i>
+            <span>Historical</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED LISTINGS ================= -->
+
+<section class="container my-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="section-title">
+            Featured Destinations
+        </h2>
+
+        <a href="/listings" class="view-all">
+            View All →
+        </a>
+
+    </div>
+
+    <div class="row g-4">
+
+        <% for(let i=1;i<=6;i++){ %>
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="listing-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900"
+                    alt=""
+                >
+
+                <div class="listing-body">
+
+                    <h5>Luxury Mountain Cabin</h5>
+
+                    <p>
+                        Manali, Himachal Pradesh
+                    </p>
+
+                    <div class="listing-footer">
+
+                        <span class="price">
+                            ₹4,999 / night
+                        </span>
+
+                        <span class="rating">
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <% } %>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-section">
+
+    <div class="container">
+
+        <h2 class="section-title text-center">
+            Why Choose Wanderlust?
+        </h2>
+
+        <div class="row mt-5">
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <h4>Verified Hosts</h4>
+
+                    <p>
+                        Stay confidently with trusted hosts.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                    <h4>Secure Payment</h4>
+
+                    <p>
+                        Fast and secure online transactions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h4>24×7 Support</h4>
+
+                    <p>
+                        Always available to help you.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <div class="why-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h4>Top Rated</h4>
+
+                    <p>
+                        Thousands of happy travelers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="host-section">
+
+    <div class="container">
+
+        <div class="host-card">
+
+            <div>
+
+                <h2>
+                    Become a Host
+                </h2>
+
+                <p>
+                    Share your home with travelers and earn extra income.
+                </p>
+
+            </div>
+
+            <a href="/listings/new" class="host-btn">
+
+                Start Hosting
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="container my-5">
+
+    <h2 class="section-title text-center">
+        What Our Guests Say
+    </h2>
+
+    <div class="row mt-5">
+
+        <div class="col-lg-4">
+
+            <div class="testimonial">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    "Amazing experience! Clean rooms and beautiful locations."
+                </p>
+
+                <h6>- Rahul Sharma</h6>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="testimonial">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    "Booking was simple and the stay exceeded expectations."
+                </p>
+
+                <h6>- Priya Singh</h6>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="testimonial">
+
+                ⭐⭐⭐⭐⭐
+
+                <p>
+                    "Highly recommended for anyone who loves travelling."
+                </p>
+
+                <h6>- Aman Verma</h6>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container text-center">
+
+        <h2>
+            Get Travel Inspiration
+        </h2>
+
+        <p>
+            Subscribe to receive exclusive travel deals and destination guides.
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+            >
+
+            <button>
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<script src="/js/home.js"></script>
